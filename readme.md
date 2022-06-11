@@ -25,4 +25,4 @@ Then you gonna see the portfolio site load up..
 
 ## Show Love 💓 
 
-Show Love by giving it a start...😇
+Show Love by giving the Repo a star...😇
