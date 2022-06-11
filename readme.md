@@ -13,3 +13,12 @@
 4. The go ahead runnign the script ``npm run start`` or ``nodemon server.js`` <br />
 
 Then you gonna see the portfolio site load up..
+
+
+## Contributing 
+
+1. Fork the repo  <br />
+
+2. Make Changes <br />
+
+3. Send your pull request for review..
