@@ -7,18 +7,7 @@ const passport = require('passport');
 
 const app = express();
 
-//------------ Passport Configuration ------------//
-require('./config/passport')(passport);
 
-//------------ DB Configuration ------------//
-const db = require('./config/key').MongoURI;
-
-//------------ Mongo Connection ------------//
-mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
-    .then(() => console.log("Successfully connected to MongoDB"))
-    .catch(err => console.log(err));
-
-//------------ EJS Configuration ------------//
 app.use(expressLayouts);
 app.use("/assets", express.static('./assets'));
 app.set('view engine', 'ejs');
@@ -37,10 +26,6 @@ app.use(
 
 
 
-//------------ Passport Middlewares ------------//
-app.use(passport.initialize());
-app.use(passport.session());
-
 //------------ Connecting flash ------------//
 app.use(flash());
 
@@ -53,7 +38,6 @@ app.use(function(req, res, next) {
 });
 //------------ Routes ------------//
 app.use('/', require('./routes/index'));
-app.use('/auth', require('./routes/auth'));
 
 const PORT = process.env.PORT || 3007;
 
