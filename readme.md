@@ -22,3 +22,7 @@ Then you gonna see the portfolio site load up..
 2. Make Changes <br />
 
 3. Send your pull request for review..
+
+## Show Love 💓 
+
+Show Love by giving it a start...😇
