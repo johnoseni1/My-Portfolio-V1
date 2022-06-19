@@ -28,3 +28,5 @@ Built with Node Js
 ## Show Love 💓 
 
 Show Love by giving the Repo a star...😇
+
+# New Link at [John Oseni](https://johnoseni.co/)
