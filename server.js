@@ -2,9 +2,12 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const flash = require('connect-flash');
 const session = require('express-session');
+var enforce = require('express-sslify');
+
 
 const app = express();
 
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 app.use(expressLayouts);
 app.use("/assets", express.static('./assets'));
